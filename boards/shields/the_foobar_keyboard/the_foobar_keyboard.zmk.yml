@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: the_foobar_keyboard
+name: the_foobar_keyboard
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - the_foobar_keyboard_left
+  - the_foobar_keyboard_right

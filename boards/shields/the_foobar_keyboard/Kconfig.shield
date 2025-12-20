@@ -1,0 +1,4 @@
+config SHIELD_THE_FOOBAR_KEYBOARD_LEFT
+    def_bool $(shields_list_contains,the_foobar_keyboard_left)
+config SHIELD_THE_FOOBAR_KEYBOARD_RIGHT
+    def_bool $(shields_list_contains,the_foobar_keyboard_right)
