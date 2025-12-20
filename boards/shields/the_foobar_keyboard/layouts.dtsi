@@ -3,7 +3,6 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,battery = &non_lipo_battery;
     };
 
     physical_layout0: physical_layout0 {
@@ -42,15 +41,6 @@
 			, <&key_physical_attrs 100 100 800 200 0 0 0>
 			, <&key_physical_attrs 100 100 900 200 0 0 0>
             ;
-    };
-
-    vbatt: vbatt {
-        // Disable default battery monitoring
-        status = "disabled";
-    };
-    non_lipo_battery: non_lipo_battery {
-        compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 3>; 
     };
 
 };
