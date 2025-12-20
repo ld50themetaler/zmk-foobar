@@ -7,4 +7,7 @@ if SHIELD_THE_FOOBAR_KEYBOARD_LEFT || SHIELD_THE_FOOBAR_KEYBOARD_RIGHT
     config ZMK_SPLIT
         default y
 
+    config ZMK_POINTING
+        default y
+
 endif
