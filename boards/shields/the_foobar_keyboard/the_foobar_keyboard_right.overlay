@@ -1,13 +1,10 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts.dtsi"
-#include "battery.dtsi"
 
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
-        zmk,battery = &non_lipo_battery;
-        zmk,kscan = &kscan0;
     };
 
     default_transform: keymap_transform_0 {
@@ -40,6 +37,8 @@
 			,<&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
     };
+
+
 };
 
 &physical_layout0 {
