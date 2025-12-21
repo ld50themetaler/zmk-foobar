@@ -1,9 +1,13 @@
 /* battery.dtsi - Non-LiPo Battery Management */
 
 / {
+    vbatt: vbatt {
+        // Disable default battery monitoring
+        status = "disabled";
+    };
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 6>; /* D19/A1 (P0.30) */
+        io-channels = <&adc 3>; /* 5/A3 (P0.5) */
         // power-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>; /* Optional: Power control GPIO for voltage divider */
     };
 
