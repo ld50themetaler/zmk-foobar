@@ -1,0 +1,13 @@
+/* battery.dtsi - Non-LiPo Battery Management */
+
+/ {
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 6>; /* D19/A1 (P0.30) */
+        // power-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>; /* Optional: Power control GPIO for voltage divider */
+    };
+
+    chosen {
+        zmk,battery = &non_lipo_battery;
+    };
+};

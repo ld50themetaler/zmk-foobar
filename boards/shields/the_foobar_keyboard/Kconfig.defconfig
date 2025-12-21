@@ -10,4 +10,18 @@ if SHIELD_THE_FOOBAR_KEYBOARD_LEFT || SHIELD_THE_FOOBAR_KEYBOARD_RIGHT
     config ZMK_POINTING
         default y
 
+    config ZMK_NON_LIPO_BATTERY_MANAGEMENT
+        default y
+
+    config ZMK_NON_LIPO_MIN_MV
+        default 2000
+
+    config ZMK_NON_LIPO_MAX_MV
+        default 3000
+
+    config ZMK_NON_LIPO_LOW_MV
+        default 2300
+
+    config ZMK_NON_LIPO_ADV_SLEEP_TIMEOUT
+        default 60000
 endif
