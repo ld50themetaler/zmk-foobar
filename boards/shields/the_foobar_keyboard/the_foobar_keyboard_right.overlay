@@ -40,12 +40,6 @@
 			,<&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
     };
-
-    vbatt: vbatt {
-        // Disable default battery monitoring
-        status = "disabled";
-    };
-
 };
 
 &physical_layout0 {
