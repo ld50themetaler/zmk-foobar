@@ -1,4 +1,6 @@
 {
+  "id": "foorbar",
+  "name": "foorbar",
   "keyboard_name": "The foobar Keyboard",
   "manufacturer": "di0ib",
   "maintainer": "qmk",
@@ -14,7 +16,8 @@
     "nkro": true
   },
   "layouts": {
-    "LAYOUT": {
+    "default_layout": {
+      "name": "default_layout",
       "layout": [
         { "x": 0, "y": 0, "w": 1, "h": 1, "row": 0, "col": 0 },
         { "x": 1, "y": 0, "w": 1, "h": 1, "row": 1, "col": 0 },
