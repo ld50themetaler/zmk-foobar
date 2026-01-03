@@ -1,6 +1,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts.dtsi"
+#include "the_foobar_keyboard.dtsi"
 
 / {
     chosen {
